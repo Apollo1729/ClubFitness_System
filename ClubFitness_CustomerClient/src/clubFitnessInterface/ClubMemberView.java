@@ -41,7 +41,7 @@ public class ClubMemberView extends JFrame{
 	private JButton searchButton;
 	private JButton updateButton;
 	private JButton deleteButton;
-	
+	private JButton viewAllButton;
 	
 	
 	
@@ -118,8 +118,50 @@ public class ClubMemberView extends JFrame{
 		frame.add(feesField,gbc);
 		
 		
+		/**********Buttons*******/
+		int topPadding = 25;
+		saveButton = new JButton("Save");
+		gbc.gridx = 0;
+		gbc.gridy = 5;
+		gbc.insets = new Insets(topPadding,0,0,0);
+		frame.add(saveButton,gbc);
+		
+		searchButton = new JButton("Search");
+		gbc.gridx =0;
+		gbc.gridy =5;
+		gbc.anchor = GridBagConstraints.NORTHWEST;
+		gbc.insets = new Insets(topPadding,80,0,0);
+		frame.add(searchButton,gbc);
+		
+		updateButton = new JButton("Update");
+		gbc.gridx =1;
+		gbc.gridy =5;
+		gbc.anchor = GridBagConstraints.NORTHWEST;
+		gbc.insets = new Insets(topPadding,20,0,0);
+		frame.add(updateButton,gbc);
+		
+		deleteButton = new JButton("Delete");
+		gbc.gridx =1;
+		gbc.gridy =5;
+		gbc.anchor = GridBagConstraints.NORTHWEST;
+		gbc.insets = new Insets(topPadding,120,0,0);
+		frame.add(deleteButton,gbc);
+		
+		viewAllButton = new JButton("View All");
+		gbc.gridx =0;
+		gbc.gridy = 6;
+		gbc.gridwidth = 2;
+		gbc.fill = GridBagConstraints.HORIZONTAL; // Stretch to fill the width
+		gbc.insets = new Insets(topPadding,0,0,0);
+		frame.add(viewAllButton,gbc);
 		
 		
+		
+		textarea = new JTextArea(15,50);
+		gbc.gridx =0;
+		gbc.gridy = 7;
+		gbc.gridwidth = 2;
+		frame.add(textarea,gbc);
 	    
 		 
 		
@@ -208,7 +250,7 @@ public class ClubMemberView extends JFrame{
 		
 		
 		
-		frame.setSize(800,900);
+		frame.setSize(1000,900);
 		frame.setVisible(true);;
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
