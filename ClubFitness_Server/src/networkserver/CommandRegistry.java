@@ -20,7 +20,12 @@ public class CommandRegistry {
     	    	
         // Register all commands by putting them in the map
         // Key = what the client sends, Value = the command object to run
-        
+    	commands.put("SAVESINGLECLUBMEMBER", new SingleClubRegisterCommand());
+        commands.put("SAVEMULTICLUBMEMBER", new MultiClubRegisterCommand());
+        commands.put("SEARCHMEMBER", new SearchMemberCommand());
+        commands.put("UPDATEMEMBER", new UpdateMemberCommand());
+        commands.put("DELETEMEMBER", new DeleteMemberCommand());
+        commands.put("VIEWALLMEMBERS", new ViewAllMembersCommand());
 
     }
     
