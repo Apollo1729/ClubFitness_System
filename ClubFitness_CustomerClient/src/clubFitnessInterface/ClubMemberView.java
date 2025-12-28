@@ -37,6 +37,13 @@ public class ClubMemberView extends JFrame{
 	private JTextArea textarea;
 	private GridBagConstraints gbc;
 	
+	private JButton saveButton;
+	private JButton searchButton;
+	private JButton updateButton;
+	private JButton deleteButton;
+	
+	
+	
 	
 	public ClubMemberView() {
 		
@@ -109,6 +116,8 @@ public class ClubMemberView extends JFrame{
 		gbc.gridx=1;
 		gbc.gridy=4;
 		frame.add(feesField,gbc);
+		
+		
 		
 		
 	    
